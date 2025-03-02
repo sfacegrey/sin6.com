@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performances - SIN6.DNC</title>
+    <link rel="stylesheet" href="performances.css">
+</head>
+<body>
+
+    <!-- Performance Header -->
+    <header class="performance-header">
+        <h1>Our Performance Videos</h1>
+        <p>Watch our electrifying performances below. Click "Next Video" to explore more!</p>
+    </header>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <video id="video-player" controls>
+            <source src="videos/performance1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-buttons">
+            <button class="next-btn">Next Performance</button>
+        </div>
+    </div>
+
+    <!-- Home and Profile Buttons -->
+    <div class="home-profile-btns">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profiles</a>
+    </div>
+
+    <!-- JavaScript for Dynamic Video Switching -->
+    <script>
+        let videoIndex = 0;
+        const videos = [
+            "videos/performance1.mp4",
+            "videos/performance2.mp4",
+            "videos/performance3.mp4", // Add more video paths here
+        ];
+
+        const videoPlayer = document.getElementById("video-player");
+        const nextButton = document.querySelector(".next-btn");
+
+        nextButton.addEventListener("click", () => {
+            videoIndex = (videoIndex + 1) % videos.length;
+            videoPlayer.src = videos[videoIndex];
+            videoPlayer.play();
+        });
+    </script>
+
+</body>
+</html>

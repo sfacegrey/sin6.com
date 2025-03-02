@@ -1,0 +1,119 @@
+/* Profile Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: #111;
+}
+
+/* Header Section */
+header {
+    background: #e82574;
+    color: white;
+    width: 100%;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Members Section */
+#members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.member {
+    background-color: #1d1d1d;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+.member-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    border-top: 2px solid #e82574;
+}
+
+.member-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.member-info .ig {
+    font-size: 1.2rem;
+    color: #e82574;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ig-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #111;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #e82574;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,144 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+/* Performance Header */
+.performance-header {
+    background-color: #e82574;
+    color: white;
+    width: 100%;
+    padding: 40px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.performance-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.performance-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Video Container */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    margin-bottom: 80px;  /* Added space at the bottom for the fixed buttons */
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 5px solid #e82574; /* Pink border around video */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.video-buttons {
+    margin-top: 20px;
+}
+
+.next-btn {
+    background-color: #e82574;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.next-btn:hover {
+    transform: scale(1.1);
+    background-color: #b11f59;
+}
+
+/* Buttons Section */
+.buttons-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style for each button */
+button {
+    padding: 15px 30px;
+    background-color: #e82574;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #b11f59;
+}
+
+/* Scrollable Area Styling */
+body {
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+
+/* Home and Profile Buttons on Left Side Vertically */
+.home-profile-btns {
+    position: fixed;
+    left: 20px; /* Distance from the left */
+    top: 50%;
+    transform: translateY(-50%); /* Centered vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+}
+
+.home-profile-btns a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #e82574;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.home-profile-btns a:hover {
+    transform: scale(1.1);
+    background-color: #b11f59;
+}

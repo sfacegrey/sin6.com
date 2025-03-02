@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIN6.DNC</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure the path to your CSS is correct -->
+</head>
+<body>
+
+    <!-- Full Screen with Logo and Text -->
+    <div class="home-container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="SIN6.DNC Logo" class="logo">
+            <h1>SIN6.DNC</h1>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons at the Bottom -->
+    <div class="navigation-buttons">
+        <a href="performances.html" class="nav-btn">Performances</a>
+        <a href="profile.html" class="nav-btn">Profiles</a>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="audio/xg(ins).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- JavaScript for Flickering Effect -->
+    <script>
+        const audio = document.getElementById('background-music');
+        const logo = document.querySelector('.logo');
+
+        // Start music after any click on the page (user interaction)
+        document.body.addEventListener('click', () => {
+            audio.play();
+        });
+
+        // Makes the logo flicker every 500ms
+        setInterval(() => {
+            logo.classList.toggle('flicker');
+        }, 500);
+    </script>
+
+</body>
+</html>
