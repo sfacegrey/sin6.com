@@ -1,4 +1,4 @@
-/* Profile Page Styles */
+/* Profile Page Styles (keep existing styles) */
 body {
     font-family: 'Arial', sans-serif;
     background: #111;
@@ -22,7 +22,7 @@ body {
 header {
     background: #e82574;
     color: white;
-    width: 100%;
+    width: 104%;
     padding: 30px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
@@ -36,12 +36,12 @@ header h1 {
 
 /* Members Section */
 #members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
     gap: 30px;
     margin-top: 50px;
     padding: 20px;
+    width: 80%; /* Adjusted width for proper spacing */
 }
 
 .member {

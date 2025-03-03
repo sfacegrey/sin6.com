@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="profiles.css">
 </head>
 <body>
+        
     <div class="profile-container">
         <header>
             <h1>SINISTER6 - MEMBERS</h1>
@@ -18,22 +19,25 @@
         Your browser does not support the audio element.
     </audio>
 
-    <!-- JavaScript for Flickering Effect -->
-    <script>
-        const audio = document.getElementById('background-music');
 
-        // Ensure audio is ready to be played
-        audio.load();
+<!-- JavaScript for Flickering Effect -->
+<script>
+    const audio = document.getElementById('background-music');
 
-        // Start music after any click on the page (user interaction)
-        document.body.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play().catch(err => {
-                    console.error("Audio play error:", err);
-                });
-            }
-        });
-    </script>
+    // Ensure audio is ready to be played
+    audio.load();
+
+    // Start music after any click on the page (user interaction)
+    document.body.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play().catch(err => {
+                console.error("Audio play error:", err);
+            });
+        }
+    });
+</script>
+
+
 
         <section id="members">
             <!-- Member 1 -->
@@ -197,6 +201,21 @@
                         <a href="https://www.instagram.com/tishleianne" target="_blank">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram" class="ig-logo">
                             IG: @tishleianne
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- Member 12 -->
+            <div class="member">
+                <div class="member-image">
+                    <img src="images/member12.jpg" alt="Member 10">
+                </div>
+                <div class="member-info">
+                    <h2>SAIF</h2>
+                    <p class="ig">
+                        <a href="https://www.instagram.com/saif.tmm" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram" class="ig-logo">
+                            IG: @saif.tmm
                         </a>
                     </p>
                 </div>
